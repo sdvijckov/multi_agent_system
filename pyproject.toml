@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]  # Инструменты сборки
+build-backend = "setuptools.build_meta" # Бэкенд сборки
+
+[project]
+name = "multi_agent_system" # Имя твоего пакета (можно придумать)
+version = "0.1.0 alpha" # Версия (начни с 0.1.0 или 0.0.1)
+description = "Система управления виртуальной ИИ-командой" # Краткое описание
+authors = [ # Информация об авторах
+    { name = "Олег Сдвижков", email = "sdvijckov.oleg@yandex.ru" }
+]
+dependencies = [ # Зависимости твоего пакета (только прямые!)
+PyQt5
+
+]
+readme = "README.md" # Файл README
+requires-python = ">=3.10" # Версия Python, необходимая для работы
+
+[project.optional-dependencies] # Опциональные зависимости (если есть)
+test = ["pytest", "coverage"]
+dev = ["black", "flake8", "mypy"]
+
+[project.urls] # Ссылки на проект (необязательно)
+"Homepage" = "https://github.com/sdvijckov/multi_agent_system"
+"Bug Tracker" = "https://github.com/sdvijckov/multi_agent_system/issues"
